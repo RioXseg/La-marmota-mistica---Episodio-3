@@ -1,0 +1,378 @@
+﻿###########
+#Variables#
+###########
+
+define n = Character(what_italic=True,what_xalign=0.5,what_textalign=0.5)
+define e = Character("Eileen")
+define j = Character("Jesucristo")
+define m = Character("Marcelo")
+define d = Character("Dante")
+define c = Character("Clon de Dante")
+define v = Character("Voz desconocida")
+define b = Character("Belfegor")
+define f = Character("Frederick")
+
+transform rightRight:
+    xanchor 0.5
+    xpos 0.9
+    
+transform rightLeft:
+    xanchor 0.5
+    xpos 0.7
+
+
+##########
+#Historia#
+##########
+label start:
+    play music "intro.mp3"
+    
+    call prelude
+    
+    stop music fadeout 1.0
+    play music "1.mp3"
+    
+    scene carceles_acuiferas
+    show dante impresionado at center with moveinleft
+    
+    n "Dante no sabía que estaba pasando y quedó anopasmado ante lo que sus ojos estaban viendo,{p=1.0} miles y miles de anfibios haciendo ruidos de anfibios en sus cárceles acuíferas de agua."
+
+    show dante mad
+    d "Jesucristo culiao, nunca mas voy a confiar en ti."
+    
+    show dante mad at left with move
+    show marmota idle_navideña at right:
+        yanchor 1.0
+        ypos 1.2
+    with moveinright
+    
+    j "Era obvio que te iba a traicionar, hasta te hice una talla de la PDI, todos los que hacen tallas sobre la PDI son traidores, ¡incluyendote a ti, clon de Dante Allighieri!"
+    
+    show marmota idle_navideña at rightRight with move
+    show clon thinking at rightLeft:
+        yanchor 1.0
+        ypos 1.0
+    with moveinright
+    
+    c "Que pasa Jesucristo, se supone que Belfegor nos esta manipulando y nos dijo que no pelearamos."
+    
+    show dante:
+        xpos -0.5
+    show clon:
+        xpos -0.5
+    show marmota:
+        xpos -0.5
+    with move
+    
+    scene castillo with dissolve
+    
+    n "Con paso acelerado, The Real Dante fue llevado al trono de Belfegor, el cual estaba con dos machis quemando casas típicas de la Araucanía."
+    
+    show dante mad:
+        xanchor 0.5
+        xpos 0.4
+        yanchor 1.0
+        ypos 1.0
+    show marmota idle_navideña:
+        xanchor 0.5
+        xpos 0.87
+        yanchor 1.0
+        ypos 1.2
+    show clon thinking:
+        xanchor 0.5
+        xpos 0.7
+        yanchor 1.0
+        ypos 1.0
+        
+    with moveinright
+    
+    v "Tu, Dante, ¡me ayudarás a crear un mundo de Mapuches y Cuecas bacanes!{p=1}¡Las cuecas serán eternas! "
+    
+    show dante question
+    
+    d "Espera, ¿Quien chucha eres?"
+    
+    show dante question:
+        xpos 0.55
+    show marmota idle_navideña:
+        xpos 0.95
+    show clon thinking:
+        xpos 0.82
+    with move
+    
+    show belfegor idle:
+        yanchor 1.0
+        ypos 1.0
+        xanchor 0.5
+        xpos 0.2
+    with moveinleft
+    
+    stop music fadeout 1.0
+    
+    play music "2.mp3"
+    
+    b "Ah, soy Belfegor, king of the mapuches reich, el amo indiscutible de este universo, controlador del tiempo y odiador de los fideos."
+    
+    show dante idle2
+    
+    d "¿Te puedo hacer una pulenta talla chica, don Belfegor?"
+    
+    n "Dijo dante de forma bastante futbolística"
+    
+    show belfegor decepcion
+    
+    b "Bueno, pero que no este relacionada con el futbol."
+    
+    n "Dante de forma burlesca, irónica y satírica dijo..."
+    
+    show dante jaja
+    
+    d "TALLARINES, FETUCCHINIS, DAME TERRITORIO EN LA ARAUCANIA PL0X MIRENME SOY MAPUCHE."
+    
+    show belfegor enojado
+    
+    b "{size=+8}Ohhh te fuiste en la volá wacho culiao, te vay a quedar en cana por el resto de la eternidad junto a los anfibios fascistas que buscan {size=-8}{nw}"
+    b "{size=+8}quitarle tierras a las familias mapuches, todo por hacer una talla desagradable e imitarme de forma deleznable. {size=-8}"
+    b "Llévense a este saco de excremento al calabozo, Jesucristo y Dante 2.0."
+    
+    c "Bueno."
+    
+    show dante:
+        xpos -0.5
+    show marmota:
+        xpos -0.5
+    show clon:
+        xpos -0.5
+    with move
+    
+    scene Calabozo_del_yaoi with dissolve
+    
+    n "Dante fue llevado al calabozo del Yaoi y lo hicieron ver animes maracos por toda la semana, Dante fue perdiendo su identidad y empezó a cuestionar su existencia."
+    
+    show dante question:
+        xanchor 0.5
+        xpos 0.5
+        yanchor 1.0
+        ypos 1.0
+    with moveinleft
+
+    #######################MATERIAL DEMO#################################################################
+
+    stop music fadeout 3.0
+    
+    d "¿Por que tuve que encontrarme con Jesucristo en el mar Atlántico? ¿Por que Jesucristo era una marmota? ¿Por que cresta el fondo aun no tiene una imagen?"
+
+    n "Se supone que ahora venia una escena en donde actuaban tu y frederick, pero el creador este aun no hace a frederick."
+
+    d "¿y que cresta se supone que haga al respecto?"
+    
+    n "Wait a moment, te voy a llevar a la siguiente escena."
+
+    #######################MATERIAL DEMO#################################################################
+
+    #show dante:
+    #    xpos 0.75
+        
+    #show frederick enojado:
+    #    xanchor 0.5
+    #    xpos 0.25
+    #with moveinleft
+    
+    #f "Callate weon."
+    
+    #show dante mad2
+    
+    #d "Frederick culiao me hiciste ver Boku no Pico cuatro veces seguidas."
+    
+    #show frederick uwu
+    
+    #f "Es que me gusta harto, compañero del yaoi."
+    
+    #show dante idle
+    
+    #d "{size=+15}Igual no esta mal para ser obra de los mismos creadores de Naruto.{size=-15}"
+    
+    #n "Gritó Dante por razones desconocidas."
+    
+    
+    #show frederick:
+    #    linear 4.0 xpos 0.60
+    #$renpy.pause(4,hard=True)
+    
+    #show dante:
+    #    linear 4.0 xpos 1.5
+    #show frederick:
+    #    linear 4.0 xpos 1.5
+    #$renpy.pause(2.7,hard=True)
+    
+    #n "Después de estas importantes conversaciones, Dante fue llevado ante el trono de Belfegor para convencerlo de que lo ayudara para que el pueblo mapuche gobernara el mundo."
+    
+    scene castillo with dissolve
+    
+    play music "2.mp3"
+    
+    show belfegor idle:
+        xanchor 0.5
+        xpos 0.25
+        yanchor 1.0
+        ypos 1.0
+    with moveinleft
+    
+    b "¿Ahora te vas a poner serio, Dante?"
+    
+    show dante serio:
+        xanchor 0.5
+        xpos 0.75
+        yanchor 1.0
+        ypos 1.0
+    with moveinright
+    
+    d "Si, mi lord."
+    
+    b "Estupendo."
+    
+    show dante jaja
+    
+    d "Mi lord de gaytube.com ahahahaha pero que bueno soy haciendo tallas, Belfegor culiao weon."
+    
+    show belfegor enojado
+
+    b "{size=+10}¿Que hueá dijiste de mi ahueonao? Para que sepas fui primero en antigüedad en la Escuela Militar y en la Escuela de las{size=-10}{nw}"
+    b "{size=+10}Américas, he participado en varias operaciones secretas contra el MIR y el FPMR y tengo mas de 300 bajas confirmadas,{size=-10}{nw}"
+    b "{size=+10}estoy entrenado en Guerra de Gorilas y soy el Francotirador estrella en toda las FF.AA. chilenas, para mi no eres {size=-10}{nw}"
+    b "{size=+10}nada más que un blanco viviente, tu cabeza volará con una precisión jamás antes vista sobre la faz de la tierra, acuérdate{size=-10}{nw}"
+    b "{size=+10}de esto conchetumadre, ¿Acaso crees que puedes andar tirándome mierda y tildarme de asesino y glorificar a los maricones{size=-10}{nw}"
+    b "{size=+10}que se juraban guerrilleros por toda la Internet? Piénsalo bien, ahora estoy contactando a mis ex-camaradas de la CNI{size=-10}{nw}"
+    b "{size=+10}para que rastreen tu ip que en este momento esta siendo seguida, prepárate ahueonao que se te viene dura, se te viene {size=-10}{nw}"
+    b "{size=+10}la tremenda tormenta que va a acabar con la hueá de vida que tienes, estas muerto pendejo culiao, puedo estar en cualquier {size=-10}{nw}"
+    b "{size=+10}parte y poder matarte a mano pela porque estoy entrenado en mas de 8000 formas de combate desarmado y además, tengo{size=-10}{nw}"
+    b "{size=+10}acceso a todo el Arsenal de las FF.EE. del Ejercito de Chile y lo usaré para sacarte la chucha de una forma jamas vista en la{size=-10}{nw}"
+    b "{size=+10}historia de Chile ahueonao, Si solo hubieses pensado que horribles consecuencias tuvo ese comentario con “memoria histórica”{size=-10}{nw}"
+    b "{size=+10}que posteaste, pudiste no haberlo hecho y haberte evitado esto, pero no, ahora estas pagando el precio por ser el hueás{size=-10}{nw}"
+    b "{size=+10}más grande que hay, te cagare de la forma más conchetumadre que haya, cagaste, pendejo culiao.{size=-10}"
+    
+    show dante idle
+    
+    d "Ya bueno, quiero trabajar contigo, me caes bien y me recuerdas a Choche007."
+    
+    ##########################MATERIAL DEMO########################
+    stop music fadeout 3.0
+    n "Hasta aqui llega el demo de The Mystical Martmotte 3 - the End Of The Trylogy,"
+
+    n "Para descubrir que sucedio entre frederick y dante, que clase de trabajo se le dio a dante y como se desarrolla la historia debes jugar la version completa del juego."
+
+
+    return
+    ######################FIN DEL DEMO###################################
+
+    b "Bueno, primero que nada, debes destruir a cada weon de la derecha de este país, ¡debes matar a Jaime Guzmán si o si!"
+    b "cuando lo hagas te dejaré libre y volverás a tu forma original, traficante de transgénicos y como Marcelo Salas. Ah, y también te voy a dar mi colección de waifus, tengo una revista por aquí.{nw}"
+    
+    show belfegor:
+        "belfegor buscandoizq"
+        pause 0.2
+        linear 0.4 xpos 0.23
+        pause 0.2
+        "belfegor buscandoder"
+        pause 0.2
+        linear 0.4 xpos 0.25
+        "belfegor serio"
+        pause 0.2
+    $renpy.pause(1.6)
+    
+    show dante idleojoscerrados
+    
+    d "{cps=5}I accept my fate.{/cps}{nw}"
+    
+    show dante idle
+    
+    d "oye... pero si puedes controlar el tiempo, ¿porqué no cambias las lineas del tiempo y eliminas las ideas Pinochetistas y otras weas de la derecha?"
+        
+    show belfegor idle
+    
+    b "Mi poder no es ilimitado, mi fuente de energía se alimenta del odio y la furia de las personas que están ligadas a mi alma, ahora mismo no tengo energía, la gasté toda para cambiar el destino de mi vecino José."
+    b "pero después de tanta energía gastada ya no puedo hacer nada aparte de cambiarme los pantalones y escuchar la música tradicional mapuche, la cueca."
+        
+    show dante thinking
+    
+    d "Pero weon, la cueca no es originaria mapuche, dicen que se originó en Europa/África."
+        
+    show belfegor thinking
+    
+    b "... Me debes estar webeando."
+        
+    show dante mad
+    
+    d "E-Es verdad."
+        
+    show belfegor enojado
+    
+    b "¡Mata a todos los Europeos y Africanos del mundo y así podré ser el ser mas bacan y mapuche de todo el mundo!"
+        
+    show dante impresionadoizq
+    
+    d "Te fuiste en la volá."
+        
+    show belfegor idle
+    
+    b "Igual gracias por aclararme, te devolveré a tu forma original, pero seguiras siendo mi perra. Ahora toma esta gema, te unirá a mi alma y podrás alimentarme para dominar al mundo, si haces lo contrario... "
+    b "Choche007 morirá y el mundo entrará en caos y desesperación eterna y los mapuches nunca podrán tener control sobre nada."
+    b "Buena suerte, Marcelo Salas... Ah no mejor de dejo tu forma de Dante Allighieri, es como mas chistoso."
+    
+    n "Dijo Belfegor mientras se tocaba sus testículos heridos."
+        
+    show dante idle:
+        linear 1.0 xpos 1.5
+    
+    n "Nuestro protagonista se fue a Europa a exterminar a la mayor cantidad de personas para que su padre, Choche007 no feneciera. "
+    n "Fue acompañado de Jesucristo, porque eran muy buena pareja a pesar de que Jesucristo era un maricon zamudio traidor y bueno para la talla, aparte era esclavo de Belfegor, el mapuche omnipotente controlador de la galaxia."
+    
+        
+    n "fin"
+    
+    return
+
+
+#########################
+#Preludio de la historia#
+#########################
+label prelude:
+    #colocamos el fondo en negro
+    scene black with dissolve
+    #creamos el texto como una imagen para poder mostrarlo
+    image prelud = Text(Prel, text_align=0.5, size=30,color=(255,255,255))
+    #creamos la animacion, colocando un comando pause para que esta se vea de forma completa
+    $ speed = 60
+    show prelud at Move((0.5, 1.78), (0.5, -0.8), speed, repeat=False, bounce=False, xanchor="center", yanchor="center")
+    $ renpy.pause(speed,hard=True)
+    return
+    
+#############
+#Init Python#
+#############
+init python:
+    Prel = "Había una vez un hombre llamado José al cual \n \
+le gustaban mucho los fideos, hasta que un día \n \
+confundió los fideos con los testículos de su \n \
+vecino. El vecino se enfureció tanto que logró \n \
+controlar las lineas del tiempo. El vecino logró \n \
+controlar el universo en el cual José vivía y \n \
+modificó su existencia haciendo todo lo posible \n \
+para que José dejara de comer fideos. El vecino \n \
+se llamaba Belfegor Schwarzer Austreimn y era \n \
+de raza mapuche. \n \n \
+\
+Belfegor viajó eones a través de los diferentes \n \
+mundos y lineas del tiempo que controlaban los \n \
+sucesos del futuro y los manipulaba para favorecer \n \
+a los mapuches haciendo que estos lograran el control \n \
+total de América y conquistaran el universo. \n \n \n \n \n \n \n \n \
+\
+Dante Allighieri había caído en la trampa de Belfegor \n \
+y al encontrarse ante Jesucristo y su propio ser, Dante \n \
+fue atrapado por estos y llevado hasta la Prisión de \n \
+los Anfibios, que se sitúa entre el Plano Astral y el \n \
+Mental del universo que nosotros conocemos, excepto que \n \
+estés leyendo esto desde otro universo, si es así entonces \n \
+anda a leer la Biblia Delfinística. \n \n "
+            
