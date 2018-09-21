@@ -1,0 +1,44 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 111, in script
+    b "Ah, soy Belfegor, king of the mapuches reich, el amo indiscutible de este universo, controlador del tiempo y odiador de los fideos."
+IOError: Couldn't find file '2.mp3'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 111, in script
+    b "Ah, soy Belfegor, king of the mapuches reich, el amo indiscutible de este universo, controlador del tiempo y odiador de los fideos."
+  File "H:\Programas\renpy-6.99.14.3-sdk\renpy\ast.py", line 652, in execute
+    renpy.exports.say(who, what, interact=self.interact, *args, **kwargs)
+  File "H:\Programas\renpy-6.99.14.3-sdk\renpy\exports.py", line 1180, in say
+    who(what, *args, **kwargs)
+  File "H:\Programas\renpy-6.99.14.3-sdk\renpy\character.py", line 1016, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "H:\Programas\renpy-6.99.14.3-sdk\renpy\character.py", line 817, in do_display
+    **display_args)
+  File "H:\Programas\renpy-6.99.14.3-sdk\renpy\character.py", line 566, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "H:\Programas\renpy-6.99.14.3-sdk\renpy\ui.py", line 287, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "H:\Programas\renpy-6.99.14.3-sdk\renpy\display\core.py", line 2635, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "H:\Programas\renpy-6.99.14.3-sdk\renpy\display\core.py", line 3304, in interact_core
+    renpy.audio.audio.periodic()
+  File "H:\Programas\renpy-6.99.14.3-sdk\renpy\audio\audio.py", line 976, in periodic_thread_main
+    periodic_pass()
+  File "H:\Programas\renpy-6.99.14.3-sdk\renpy\audio\audio.py", line 920, in periodic_pass
+    c.periodic()
+  File "H:\Programas\renpy-6.99.14.3-sdk\renpy\audio\audio.py", line 409, in periodic
+    topf = load(self.file_prefix + filename + self.file_suffix)
+  File "H:\Programas\renpy-6.99.14.3-sdk\renpy\audio\audio.py", line 69, in load
+    rv = renpy.loader.load(fn)
+  File "H:\Programas\renpy-6.99.14.3-sdk\renpy\loader.py", line 555, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file '2.mp3'.
+
+Windows-8-6.2.9200
+Ren'Py 6.99.14.3.3347
+The Mystical Martmotte 3 - The End Of The Trylogy 1.0
+Thu Jul 26 18:49:16 2018
